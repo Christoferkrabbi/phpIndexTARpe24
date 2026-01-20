@@ -16,10 +16,10 @@
             <a href="https://christoferkrabbi24.thkit.ee" target="_blank">Originaalne index leht</a>
         </li>
         <li>
-            <a href="?leht=gitiKasutamine">Giti käsud</a>
+            <a href="?leht=gitiKasutamine.php">Giti käsud</a>
         </li>
         <li>
-            <a href="content/AndmebaasLoomad/loomadeKuvamine.php">Loomad AB</a>
+            <a href="?leht=AndmebaasLoomad/loomadeKuvamine.php">Loomad AB</a>
         </li>
 
 
