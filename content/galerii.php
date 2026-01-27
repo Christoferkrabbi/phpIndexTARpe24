@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerii</title>
+    <link rel="stylesheet" href="../style/galeriiStyle.css">
+</head>
+<header>
+    <h1>pildi galerii</h1>
+</header>
+<br>
 <form method="post" action="">
   <select name="pildid">
     <option value="">Vali pilt</option>
