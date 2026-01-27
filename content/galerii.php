@@ -13,7 +13,7 @@
   <select name="pildid">
     <option value="">Vali pilt</option>
     <?php
-		$kataloog = 'pildid';
+		$kataloog = '../image';
 		$asukoht=opendir($kataloog);
 		while($rida = readdir($asukoht)){
 			if($rida!='.' && $rida!='..'){
@@ -30,7 +30,7 @@
 <?php
 if(!empty($_POST['pildid'])){
     $pilt = $_POST['pildid'];
-    $pildi_aadress = 'pildid/'.$pilt;
+    $pildi_aadress = '../image/'.$pilt;
     $pildi_andmed = getimagesize($pildi_aadress);
 
     $laius = $pildi_andmed[0];
