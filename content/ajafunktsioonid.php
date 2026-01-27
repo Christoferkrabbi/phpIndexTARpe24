@@ -47,7 +47,7 @@ echo "<br>";
 $kuud=array(1=>'jaanuar','veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
 $paev=date('d');
 $aasta=date('Y');
-$kuu=$kuud[date('m')]; //kuu nimega
+$kuu = $kuud[(int)date('m')];
 echo "tänase kuupäev kuu nimega: ".$paev.". ".$kuu." ".$aasta.".a";
 echo "<br>";
 $synnipaevpaev=date('23');

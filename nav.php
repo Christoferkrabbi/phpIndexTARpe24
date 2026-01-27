@@ -21,7 +21,9 @@
         <li>
             <a href="?leht=AndmebaasLoomad/loomadeKuvamine.php">Loomad AB</a>
         </li>
-
+        <li>
+            <a href="?leht=tekstiFunktsioonid.php">Teksti funktsioonid</a>
+        </li>
 
 
     </ul>
