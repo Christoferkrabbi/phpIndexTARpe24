@@ -24,6 +24,9 @@
         <li>
             <a href="?leht=tekstiFunktsioonid.php">Teksti funktsioonid</a>
         </li>
+        <li>
+            <a href="?leht=matemaatilisedFunktsioonid.php">Matemaatilised funktsioonid</a>
+        </li>
 
 
     </ul>

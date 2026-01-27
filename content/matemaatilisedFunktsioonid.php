@@ -1,22 +1,6 @@
 <?php
 echo "<h2>Matemaatilised funktsioonid (kasutaja sisestusega)</h2>";
 
-// Keskmise arvutamine
-function keskmine($massiiv) {
-    if (count($massiiv) == 0) {
-        return 0;
-    }
-    return array_sum($massiiv) / count($massiiv);
-}
-
-// Maksimumi ja miinimumi leidmine
-function maxAndMin($massiiv) {
-    return [
-        "max" => max($massiiv),
-        "min" => min($massiiv)
-    ];
-}
-
 // Arvu ruut
 function ruut($arv) {
     return $arv * $arv;
@@ -42,17 +26,6 @@ $ruutArv = $_POST["ruutarv"] ?? "";
 $ruutjuurArv = $_POST["ruutjuurarv"] ?? "";
 $osa = $_POST["osa"] ?? "";
 $kogus = $_POST["kogus"] ?? "";
-
-$arvud = [5, 10, 15, 20];
-
-echo "<p>Arvud: " . implode(", ", $arvud) . "</p>";
-
-echo "<ul>";
-echo "<li>Keskmine: " . keskmine($arvud) . "</li>";
-$tulemus = maxAndMin($arvud);
-echo "<li>Maksimum: " . $tulemus["max"] . "</li>";
-echo "<li>Miinimum: " . $tulemus["min"] . "</li>";
-
 ?>
 
 <form method="post">
@@ -75,16 +48,15 @@ echo "<li>Miinimum: " . $tulemus["min"] . "</li>";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
     echo "<h3>Tulemused</h3>";
     echo "<ul>";
 
     if ($ruutArv !== "") {
-        echo "<li>$ruutArv = " . ruut($ruutArv) . "</li>";
+        echo "<li>$ruutArv ruudus = " . ruut($ruutArv) . "</li>";
     }
 
     if ($ruutjuurArv !== "") {
-        echo "<li>√$ruutjuurArv = " . ruutjuur($ruutjuurArv) . "</li>";
+        echo "<li>ruutjuur $ruutjuurArv = " . ruutjuur($ruutjuurArv) . "</li>";
     }
 
     if ($osa !== "" && $kogus !== "") {
