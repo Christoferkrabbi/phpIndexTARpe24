@@ -1,5 +1,5 @@
 <?php require("header.php"); ?>
-
+    <body class="anekdoodid">
     <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
             <h1 class="w3-text-teal">Nali 3</h1>
@@ -13,5 +13,6 @@
             </p>
         </div>
     </div>
+    </body>
 
 <?php require("footer.php"); ?>

@@ -1,11 +1,16 @@
+<?php require("header.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Mobiilimalli konspekt</title>
+    <link rel="stylesheet" href="style/mobiilimallStyle.css">
 </head>
 <body>
 
+<br>
+<br>
+<main>
 <h1>Mobiilisõbraliku veebilehe loomine</h1>
 
 <h2>1. Sissejuhatus</h2>
@@ -80,7 +85,10 @@
     Külgmenüü avaneb mobiilis nupuga ning sisu paigutus muutub vertikaalseks.
 </p>
 
-<img src="mobiilivaade.png" width="300">
+<img src="../../image/mobiilivaade.png" width="300">
+
+</main>
 
 </body>
+<?php require("footer.php"); ?>
 </html>
